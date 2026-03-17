@@ -1,0 +1,445 @@
+body{
+background:#000;
+color:gold;
+font-family:Arial;
+text-align:center;
+margin:0;
+padding-bottom:80px;
+}
+
+.logoText{
+margin-top:60px;
+font-size:30px;
+text-shadow:0 0 10px gold,0 0 20px gold,0 0 30px gold;
+}
+
+.mainBtn{
+display:block;
+width:80%;
+margin:15px auto;
+padding:15px;
+font-size:20px;
+background:#111;
+color:gold;
+border:2px solid gold;
+border-radius:12px;
+cursor:pointer;
+box-shadow:0 0 10px gold;
+}
+
+.contactBtn{
+color:#00ffd5;
+border:2px solid #00ffd5;
+box-shadow:0 0 10px #00ffd5;
+}
+
+#services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+padding:20px;
+}
+
+.serviceBox{
+background:linear-gradient(145deg,#111,#000);
+border:2px solid gold;
+border-radius:15px;
+padding:25px;
+font-size:16px;
+font-weight:bold;
+color:gold;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+cursor:pointer;
+box-shadow:0 0 10px gold;
+}
+
+.box{
+background:#111;
+border:2px solid gold;
+border-radius:12px;
+padding:15px;
+margin:10px;
+cursor:pointer;
+}
+
+.hidden{
+display:none;
+}
+
+.welcomeText{
+padding:20px;
+line-height:30px;
+}
+
+input,textarea{
+display:block;
+width:80%;
+margin:10px auto;
+padding:12px;
+border-radius:8px;
+border:none;
+}
+
+textarea{
+height:100px;
+}
+
+.uploadBox{
+display:block;
+width:80%;
+margin:15px auto;
+padding:25px;
+border:2px dashed gold;
+border-radius:10px;
+background:#111;
+cursor:pointer;
+}
+
+.sendBtn{
+background:gold;
+color:black;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+.bookBtn{
+background:gold;
+color:black;
+padding:15px;
+border:none;
+font-size:20px;
+border-radius:10px;
+margin-top:20px;
+cursor:pointer;
+}
+
+#backBtn{
+position:fixed;
+top:15px;
+left:15px;
+background:gold;
+color:black;
+border:none;
+border-radius:50%;
+width:35px;
+height:35px;
+font-size:18px;
+cursor:pointer;
+}
+
+.topMenu{
+position:fixed;
+top:10px;
+right:15px;
+}
+
+.menuIcon{
+font-size:30px;
+cursor:pointer;
+color:gold;
+}
+
+.menuList{
+display:none;
+background:#111;
+border-radius:10px;
+margin-top:10px;
+width:180px;
+}
+
+.menuList div{
+padding:12px;
+border-bottom:1px solid #333;
+cursor:pointer;
+}
+
+.menuList div:hover{
+background:#222;
+}
+
+.bottomNav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#000;
+border-top:2px solid gold;
+display:flex;
+justify-content:space-around;
+padding:12px 0;
+}
+
+.bottomNav div{
+color:gold;
+font-size:14px;
+cursor:pointer;
+}
+
+.bottomNav i{
+font-size:20px;
+margin-bottom:3px;
+}
+
+.ordersTabs{
+display:flex;
+justify-content:center;
+gap:10px;
+margin:15px;
+}
+
+.ordersTabs button{
+background:#111;
+color:gold;
+border:2px solid gold;
+padding:10px 15px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.orderBox{
+background:#111;
+border:2px solid gold;
+border-radius:12px;
+padding:15px;
+margin:10px;
+box-shadow:0 0 10px gold;
+}.topImage{
+width:60%;
+max-width:250px;
+display:block;
+margin:15px auto;
+border-radius:10px;
+}
+
+.serviceBox{
+transition:0.3s;
+}
+
+.serviceBox:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px gold,0 0 40px gold;
+}
+
+.serviceBox:active{
+transform:scale(0.95);
+}
+
+.mainBtn{
+transition:0.3s;
+}
+
+.mainBtn:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px gold;
+}
+
+.mainBtn:active{
+transform:scale(0.95);
+}
+.bottomNav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#000;
+border-top:2px solid gold;
+display:flex;
+justify-content:space-around;
+padding:10px 0;
+box-shadow:0 -3px 20px rgba(255,215,0,0.4);
+}
+
+.bottomNav div{
+color:gold;
+font-size:13px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.bottomNav i{
+font-size:22px;
+margin-bottom:4px;
+transition:0.3s;
+}
+
+.bottomNav div:hover{
+transform:translateY(-5px);
+color:white;
+}
+
+.bottomNav div:hover i{
+transform:scale(1.3);
+text-shadow:0 0 15px gold;
+}
+
+.bottomNav div:active{
+transform:scale(0.9);
+}
+
+.topImage{
+width:60%;
+max-width:250px;
+display:block;
+margin:15px auto;
+border-radius:10px;
+box-shadow:0 0 20px gold;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
+100%{transform:translateY(0)}
+}body{
+background:#000;
+color:gold;
+font-family:Arial;
+text-align:center;
+margin:0;
+padding-bottom:80px;
+}
+
+/* باقي الأكواد عندك */
+
+.topImage{
+width:60%;
+max-width:250px;
+}
+
+/* هنا تحط كود السلايدر */
+
+.slider{
+position:relative;
+width:90%;
+max-width:350px;
+margin:20px auto;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 0 15px gold;
+}
+
+.slide{
+width:100%;
+display:none;
+border-radius:15px;
+}
+
+.slide.active{
+display:block;
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+.slider{
+position:relative;
+width:90%;
+max-width:350px;
+height:220px;   /* ارتفاع ثابت */
+margin:20px auto;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 0 15px gold;
+}
+
+.slide{
+width:100%;
+height:100%;        /* نفس ارتفاع السلايدر */
+object-fit:cover;   /* يخلي الصورة تملأ المساحة */
+display:none;
+border-radius:15px;
+}
+
+.slide.active{
+display:block;
+animation:fade 1s;
+}
+
+.slider{
+position:relative;
+}
+
+.slide{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+
+.slide::after{
+position:absolute;
+bottom:10px;
+right:10px;
+left:10px;
+background:rgba(0,0,0,0.6);
+color:gold;
+padding:10px;
+border-radius:10px;
+font-size:16px;
+font-weight:bold;
+text-align:center;
+}
+.slider{
+position:relative;
+width:90%;
+margin:auto;
+height:220px;
+overflow:hidden;
+border-radius:12px;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+display:none;
+}
+
+.slide.active{
+display:block;
+}
+
+.slide img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+
+.slideText{
+position:absolute;
+top:10px;
+right:10px;
+background:rgba(0,0,0,0.6);
+color:gold;
+padding:8px 12px;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+}
+#clearOrdersBtn{
+background:#ff0000;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:10px;
+margin:10px;
+cursor:pointer;
+font-size:16px;
+box-shadow:0 0 10px red;
+}
+
+#clearOrdersBtn:active{
+transform:scale(0.95);
+}

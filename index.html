@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<title>نقاش محترف في مصر | خدمات النقاشة والدهانات وتشطيب الشقق بأفضل الأسعار</title>
+
+<meta name="description" content="أفضل خدمات النقاشة والدهانات في مصر. تنفيذ جميع أعمال دهانات الشقق والفلل والمكاتب بأعلى جودة وأفضل الأسعار. نقاش محترف لجميع أنواع الدهانات الداخلية والخارجية، تأسيس دهانات على المحارة، تشطيب سوبر لوكس، ورق حائط، عزل الأسطح، معالجة الرطوبة، دهان لاكيه للأبواب والشبابيك، حجر مايكا، تنظيف بعد التشطيب.">
+
+<meta name="keywords" content="نقاش, نقاش محترف, دهانات شقق, دهانات سوبر لوكس, تشطيب شقق, دهان حوائط, معلم نقاش, دهانات حديثة, عزل اسطح, ورق حائط, حجر مايكا, تنظيف بعد التشطيب, نقاش في مصر">
+
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="خدمات النقاشة والدهانات">
+
+<meta name="language" content="Arabic">
+
+<meta name="geo.region" content="EG">
+
+<meta name="theme-color" content="#000000">
+
+<link rel="canonical" href="https://example.com">
+
+<link rel="icon" href="icon.png">
+
+<meta property="og:title" content="خدمات النقاشة والدهانات">
+<meta property="og:description" content="نقاش محترف لجميع أعمال الدهانات وتشطيب الشقق بأفضل الأسعار في مصر">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:image" content="preview.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="خدمات النقاشة والدهانات">
+<meta name="twitter:description" content="أفضل خدمات النقاشة والدهانات وتشطيب الشقق في مصر">
+<meta name="twitter:image" content="preview.jpg">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"خدمات النقاشة والدهانات",
+"description":"أفضل خدمات النقاشة والدهانات وتشطيب الشقق في مصر",
+"areaServed":"Egypt",
+"serviceType":"دهانات وتشطيب شقق",
+"availableLanguage":"Arabic"
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="topMenu">
+
+<div class="menuIcon" onclick="toggleMenu()">⋮</div>
+
+<div id="menuList" class="menuList">
+
+<div onclick="goHome();closeMenu()">الرئيسية</div>
+<div onclick="showOffers();closeMenu()">العروض المخفضة</div>
+<div onclick="showOrders();closeMenu()">طلباتي</div>
+<div onclick="showAbout();closeMenu()">عن الشركة</div>
+<div onclick="showComplaints();closeMenu()">الشكاوي والاقتراحات</div>
+<div onclick="showPrivacy();closeMenu()">سياسة الخصوصية</div>
+<div onclick="contactUs();closeMenu()">اتصل بنا</div>
+
+</div>
+
+</div>
+
+
+<div id="home">
+
+<h1 class="logoText">خدمات النقاشة والدهانات</h1>
+<div class="slider" id="slider">
+<div class="slide active">
+<img src="https://i.ibb.co/k2QYKHQN/grok-image-1773524443136.jpg" alt="نقاش محترف دهانات وتشطيب شقق في مصر">
+<div class="slideText">اطلب نقاش محترف</div>
+</div>
+
+<div class="slide">
+<img src="https://i.ibb.co/JRMrqtKG/pngtree-all-cleaning-supplies-and-equipment-sitting-on-the-floor-image-2582380.jpg" alt="تنظيف بعد التشطيب للشقق والمنازل">
+<div class="slideText">تنظيف بعد التشطيب</div>
+</div>
+
+<div class="slide">
+<img src="https://i.ibb.co/QjT4f4hm/grok-image-1773525050471.jpg" alt="اختيار ألوان الدهانات الحديثة وتشطيب الشقق">
+<div class="slideText">اختيار اللون المناسب خصم 20%</div>
+</div>
+<div class="slide">
+<img src="https://i.ibb.co/QjT4f4hm/grok-image-1773525050471.jpg" alt="اختيار ألوان الدهانات الحديثة وتشطيب الشقق">
+<div class="slideText">اختيار اللون المناسب خصم 20%</div>
+</div>
+
+</div>   <!-- اقفل السلايدر هنا -->
+
+<button class="mainBtn" onclick="showServices()">أعمال النقاشة</button>
+
+<button class="mainBtn" onclick="showCleaning()">تنظيف بعد تشطيب</button>
+
+<button class="mainBtn contactBtn" onclick="contactUs()">تواصل معنا</button>
+
+
+</div>
+
+
+<button id="backBtn" class="hidden" onclick="goHome()">←</button>
+
+
+<div id="services" class="hidden"></div>
+
+
+<div id="cleaning" class="hidden">
+
+<div class="box" onclick="openWelcome('تنظيف عادي')">تنظيف عادي</div>
+
+<div class="box" onclick="openWelcome('تنظيف بعد تشطيب')">تنظيف بعد تشطيب</div>
+
+</div>
+
+
+<div id="offers" class="hidden">
+
+<div class="serviceBox" onclick="openWelcome('اطلب نقاش محترف')">
+اطلب نقاش محترف 150 جنيه للمعاينة
+</div>
+
+<div class="serviceBox" onclick="openWelcome('وش نظافة')">
+وش نظافة 30 جنيه للمتر
+</div>
+
+<div class="serviceBox" onclick="openWelcome('تأسيس على المحارة')">
+تأسيس على المحارة 40 جنيه للمتر تشمل معجون فقط 3 سكاكين
+</div>
+
+<div class="serviceBox" onclick="openWelcome('تشطيب دهانات كاملة سوبر لوكس')">
+تشطيب دهانات كاملة سوبر لوكس 70 جنيه للمتر
+</div>
+
+<div class="serviceBox" onclick="openWelcome('عزل أسطح')">
+عزل أسطح توريد وتركيب 90 جنيه للمتر
+</div>
+
+<div class="serviceBox" onclick="openWelcome('دهان شباك لاكيه صغير')">
+دهان شباك لاكيه صغير 400 جنيه
+</div>
+
+<div class="serviceBox" onclick="openWelcome('ورق حائط')">
+متر ورق الحائط 60 جنيه
+</div>
+
+<div class="serviceBox" onclick="openWelcome('حجر مايكا')">
+حجر مايكا المتر توريد وتركيب 220 جنيه
+</div>
+
+</div>
+
+<div id="orders" class="hidden">
+
+<h2>طلباتي</h2>
+
+<button id="clearOrdersBtn" class="hidden" onclick="clearOrders()">مسح كل الطلبات</button>
+
+<div class="ordersTabs">
+
+<button onclick="showCurrentOrders()">طلبات تحت التنفيذ</button>
+
+<button onclick="showOldOrders()">طلبات سابقة</button>
+
+</div>
+
+<div id="currentOrders" class="hidden">
+لا يوجد طلبات تحت التنفيذ
+</div>
+
+<div id="oldOrders" class="hidden">
+لا يوجد طلبات سابقة
+</div>
+
+</div>
+
+<div id="about" class="hidden">
+
+<h2>عن الشركة</h2>
+
+<p class="welcomeText">
+نحن شركة متخصصة في أعمال النقاشة والدهانات والديكورات الحديثة.
+لدينا خبرة تزيد عن عشر سنوات في تنفيذ جميع أعمال التشطيبات.
+نحرص دائماً على تقديم أفضل جودة في تنفيذ الأعمال.
+نستخدم أفضل أنواع الخامات في جميع أعمال الدهانات.
+لدينا فريق عمل من النقاشين المحترفين أصحاب الخبرة.
+نقوم بتنفيذ جميع أنواع الدهانات الداخلية والخارجية.
+ننفذ أيضاً أعمال الديكورات الحديثة وورق الحائط.
+نلتزم دائماً بالدقة في العمل والاهتمام بالتفاصيل.
+نحافظ على نظافة المكان أثناء وبعد تنفيذ العمل.
+نلتزم بالمواعيد المتفق عليها مع العميل.
+نقدم أسعار مناسبة لجميع العملاء.
+نسعى دائماً إلى كسب ثقة عملائنا.
+هدفنا هو تقديم أفضل خدمة ممكنة.
+رضا العميل هو أهم شيء بالنسبة لنا.
+نشكر عملاءنا على ثقتهم الدائمة بنا.
+</p>
+
+</div>
+
+
+<div id="complaints" class="hidden">
+
+<h2>الشكاوي والاقتراحات</h2>
+
+<textarea id="complaintText" placeholder="اكتب شكوتك أو اقتراحك"></textarea>
+
+<button onclick="sendComplaint()">إرسال</button>
+
+</div>
+
+
+<div id="privacy" class="hidden">
+
+<h2>سياسة الخصوصية</h2>
+
+<p class="welcomeText">
+نحن في تطبيق خدمات النقاشة والدهانات نحترم خصوصية المستخدمين ونلتزم بحماية بياناتهم.
+يقوم التطبيق بجمع بعض البيانات الأساسية عند إرسال طلب الخدمة مثل الاسم ورقم الهاتف والعنوان.
+تُستخدم هذه البيانات فقط للتواصل مع العميل وتنفيذ الخدمة المطلوبة.
+لا نقوم بمشاركة بيانات المستخدمين مع أي طرف ثالث.
+قد يتم استخدام رقم الهاتف للتواصل مع العميل بخصوص الطلب فقط.
+يتم حفظ الطلبات داخل التطبيق لتحسين تجربة المستخدم ومتابعة الطلبات السابقة.
+نلتزم بالحفاظ على سرية بيانات العملاء وعدم استخدامها في أي أغراض أخرى.
+باستخدامك لهذا التطبيق فإنك توافق على سياسة الخصوصية الخاصة بنا.
+</p>
+
+</div>
+
+
+<div id="welcome" class="hidden">
+
+<p class="welcomeText">
+مرحبا بك في خدمات النقاشة والدهانات.
+نحن نقدم أفضل خدمات الدهانات والتشطيبات الحديثة.
+لدينا فريق عمل من النقاشين المحترفين.
+نستخدم أفضل أنواع الخامات لضمان أعلى جودة.
+ننفذ جميع أنواع الدهانات للشقق والفلل والمكاتب.
+نقدم خدمات الديكورات الحديثة وورق الحائط.
+نقوم بتنفيذ أعمال عزل الأسطح ومعالجة الرطوبة.
+نلتزم بالدقة في العمل والاهتمام بالتفاصيل.
+نلتزم بالمواعيد المتفق عليها مع العملاء.
+نقدم أسعار مناسبة للجميع.
+نساعدك في اختيار أفضل الألوان لمنزلك.
+ننفذ أعمال التشطيب باحترافية عالية.
+هدفنا دائماً هو رضا العميل.
+نسعى دائماً لتقديم أفضل خدمة.
+شكراً لثقتكم في خدمات النقاشة والدهانات.
+</p>
+
+<button class="bookBtn" onclick="showForm()">احجز موعد</button>
+
+</div>
+
+
+<div id="formPage" class="hidden">
+
+<input id="name" placeholder="الاسم">
+<input id="phone" placeholder="رقم التليفون">
+<textarea id="message" placeholder="اكتب رسالتك"></textarea>
+<input id="location" placeholder="العنوان">
+
+<button class="sendBtn" onclick="sendOrder()">إرسال الطلب</button>
+
+</div>
+
+
+<div class="bottomNav">
+
+<div onclick="goHome()">
+<i class="fa-solid fa-house"></i><br>
+الرئيسية
+</div>
+
+<div onclick="showServices()">
+<i class="fa-solid fa-paint-roller"></i><br>
+الخدمات
+</div>
+
+<div onclick="showOffers()">
+<i class="fa-solid fa-tags"></i><br>
+العروض
+</div>
+
+<div onclick="showOrders()">
+<i class="fa-solid fa-box"></i><br>
+طلباتي
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
