@@ -452,7 +452,9 @@ if (
     return;
 }
 
-if(!/^01[0-9]{9}$/.test(phone.value)){
+let phoneValue = phone.value.trim();
+
+if(!/^(01[0-9]{9}|٠١[٠-٩]{9})$/.test(phoneValue)){
 let errorBox = document.createElement("div");
 
 errorBox.style.position = "fixed";
