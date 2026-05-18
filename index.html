@@ -606,21 +606,76 @@ onclick="sendContactMessage()">
 
 </div>
 
-  <div id="offlinePage" class="hidden">
+<!-- شاشة عدم وجود الإنترنت -->
+<div id="offlineBox" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#ffffff;
+z-index:999999;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-family:Arial;
+text-align:center;
+padding:20px;
+">
 
-<h2>
-لا يوجد اتصال بالإنترنت
-</h2>
+<h2>لا يوجد اتصال بالإنترنت</h2>
 
-<p class="welcomeText">
-تحقق من الشبكة وحاول مرة أخرى
+<p style="color:#666;">
+تحقق من الشبكة ثم اضغط إعادة المحاولة
 </p>
 
-<button class="mainBtn" onclick="location.reload()">
+<button onclick="retryConnection()" style="
+padding:12px 24px;
+background:#2196F3;
+color:white;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+">
 إعادة المحاولة
 </button>
 
-  </div>
+</div>
+
+<script>
+const offlineBox = document.getElementById("offlineBox");
+
+function updateConnectionStatus() {
+
+  if (navigator.onLine) {
+
+    offlineBox.style.display = "none";
+
+  } else {
+
+    offlineBox.style.display = "flex";
+
+  }
+
+}
+
+function retryConnection() {
+
+  if (navigator.onLine) {
+    location.reload();
+  } else {
+    updateConnectionStatus();
+  }
+
+}
+
+window.addEventListener("online", updateConnectionStatus);
+window.addEventListener("offline", updateConnectionStatus);
+
+updateConnectionStatus();
+</script>
 
 <script src="script.js"></script>
 
